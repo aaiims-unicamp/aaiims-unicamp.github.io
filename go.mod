@@ -7,4 +7,4 @@ go 1.25.5
 disable = false
 ignoreConfig = false
 ignoreImports = false
-path = 'github.com/theNewDynamic/gohugo-theme-ananke/v2'
+path = "github.com/theNewDynamic/gohugo-theme-ananke/v2"

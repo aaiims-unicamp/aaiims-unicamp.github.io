@@ -1,0 +1,4 @@
+baseURL = 'https://smartassistant-unicamp.github.io'
+languageCode = 'en-us'
+title = 'Smart Assistant Unicamp'
+theme = 'ananke'
