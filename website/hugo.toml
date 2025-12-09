@@ -1,0 +1,31 @@
+baseURL = "smartassistant-unicamp.github.io/"
+languageCode = "en-us"
+title = "Smart Assistant"
+theme = "ananke"
+
+[menu]
+    [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+    [[menu.main]]
+    name = "Learn"
+    url = "/learn"
+    weight = 2
+
+    [[menu.main]]
+    name = "Publications"
+    url = "/Publications/"
+    weight = 3
+
+    [[menu.main]]
+    name = "Partners"
+    url = "/Partners/"
+    weight = 4
+
+    [[menu.main]]
+    name = "About"
+    url = "/About/"
+    weight = 5
+
