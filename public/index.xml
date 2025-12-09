@@ -1,47 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Smart Assistant Unicamp</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Smart Assistant Unicamp</description>
+    <title></title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on </description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 09 Dec 2025 13:44:48 -0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Getting Start</title>
-      <link>http://localhost:1313/learn/getting-start/</link>
-      <pubDate>Tue, 09 Dec 2025 13:44:48 -0300</pubDate>
-      <guid>http://localhost:1313/learn/getting-start/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Articles</title>
-      <link>http://localhost:1313/publications/articles/</link>
-      <pubDate>Tue, 09 Dec 2025 11:58:24 -0300</pubDate>
-      <guid>http://localhost:1313/publications/articles/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Petrobras</title>
-      <link>http://localhost:1313/partners/petrobras/</link>
-      <pubDate>Tue, 09 Dec 2025 11:58:18 -0300</pubDate>
-      <guid>http://localhost:1313/partners/petrobras/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>http://localhost:1313/about/about/</link>
-      <pubDate>Tue, 09 Dec 2025 11:54:45 -0300</pubDate>
-      <guid>http://localhost:1313/about/about/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>First Post</title>
-      <link>http://localhost:1313/posts/first-post/</link>
-      <pubDate>Sun, 07 Dec 2025 17:09:05 -0300</pubDate>
-      <guid>http://localhost:1313/posts/first-post/</guid>
-      <description>&lt;h1 id=&#34;hello-world&#34;&gt;Hello world!&lt;/h1&gt;</description>
-    </item>
+    <language>en</language>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
