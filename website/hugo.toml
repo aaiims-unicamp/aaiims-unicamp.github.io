@@ -1,31 +1,34 @@
 baseURL = "smartassistant-unicamp.github.io/"
-languageCode = "en-us"
 title = "Smart Assistant"
-theme = "ananke"
+theme = ["ananke"]
+resourceDir = "./public"
 
-[menu]
-    [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
+defaultContentLanguage = "en"
+sectionPagesMenu = "main"
+enableRobotsTXT = true
 
-    [[menu.main]]
-    name = "Learn"
-    url = "/learn"
-    weight = 2
+[services.googleAnalytics]
+id = ''
 
-    [[menu.main]]
-    name = "Publications"
-    url = "/Publications/"
-    weight = 3
+[pagination]
+pagerSize = 20
 
-    [[menu.main]]
-    name = "Partners"
-    url = "/Partners/"
-    weight = 4
+[languages.en]
+contentDir = "content/en"
+languageCode = 'en-US'
+weight = 1
+title = "Smart Assistant"
 
-    [[menu.main]]
-    name = "About"
-    url = "/About/"
-    weight = 5
+[languages.pt]
+contentDir = "content/pt"
+languageCode = 'pt-BR'
+weight = 2
+title = "Smart Assistant"
 
+[sitemap]
+changefreq = "monthly"
+priority = 0.5
+filename = "sitemap.xml"
+
+[params]
+site_logo = "./static/img/eagle.png"
