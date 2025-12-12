@@ -8,14 +8,23 @@
     <loc>//localhost:1313/about/</loc>
     <lastmod>2025-12-09T14:28:08-03:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/publications/</loc>
+    <loc>//localhost:1313/getting-start/</loc>
+    <lastmod>2025-12-09T14:28:08-03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/how-to-install/</loc>
+    <lastmod>2025-12-09T14:28:08-03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/how-to-test/</loc>
     <lastmod>2025-12-09T14:28:08-03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/learn/</loc>
-  </url><url>
-    <loc>//localhost:1313/learn/getting-start/</loc>
+    <lastmod>2025-12-09T14:28:08-03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/partners/</loc>
+    <lastmod>2025-12-09T14:28:08-03:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/publications/</loc>
+    <lastmod>2025-12-09T14:28:08-03:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/</loc>
   </url><url>

@@ -1,8 +1,8 @@
 +++
 date = '2025-12-09T14:28:08-03:00'
-title = 'Getting Start'
+title = 'How to test'
 draft = false
-url = "/getting-start"
+url = "/how-to-test"
 featured_image = './img/cover.jpg'
 summary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 +++

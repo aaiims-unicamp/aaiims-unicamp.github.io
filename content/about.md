@@ -1,6 +1,10 @@
 +++
 date = '2025-12-09T14:28:08-03:00'
 title = 'About'
+featured_image = './img/cover.jpg'
+draft = false
+url = "/about"
+summary = ""
 +++
 
 > _"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."_
