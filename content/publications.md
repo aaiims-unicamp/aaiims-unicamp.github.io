@@ -24,5 +24,3 @@ summary = ""
 
 -   [scientific] Outra publicação científica
 -   [journal] Outro artigo em periódico
-
-{{</countcategories>}}
