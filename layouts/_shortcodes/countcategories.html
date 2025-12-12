@@ -1,0 +1,80 @@
+{{- $categories := dict
+    "scientific" 0
+    "journal" 0
+    "annals" 0
+    "chapter" 0
+    "book" 0
+    "reports" 0
+-}}
+{{- $years := dict -}}
+{{- $currentYear := "" -}}
+{{- $lines := split .Inner "\n" -}}
+{{- range $lines -}}
+    {{- $line := trim . " \n\r\t" -}}
+    {{- if or (findRE "^\\*\\*[0-9]{4}\\*\\*$" $line) (findRE "^<strong>[0-9]{4}</strong>$" $line) -}}
+        {{- $currentYear = replaceRE "[^0-9]*([0-9]{4}).*" "$1" $line | trim " " -}}
+        {{- $exists := false -}}
+        {{- range $k, $v := $years -}}
+            {{- if eq $k $currentYear -}}
+                {{- $exists = true -}}
+            {{- end -}}
+        {{- end -}}
+        {{- if not $exists -}}
+            {{- $years = merge $years (dict $currentYear (slice)) -}}
+        {{- end -}}
+    {{- else if findRE "^\\s*-\\s*\\[.*\\]" $line -}}
+        {{- $cat := "" -}}
+        {{- if findRE "\\[scientific\\]" $line -}}
+            {{- $categories = merge $categories (dict "scientific" (add (index $categories "scientific") 1)) -}}
+            {{- $cat = "scientific" -}}
+        {{- else if findRE "\\[journal\\]" $line -}}
+            {{- $categories = merge $categories (dict "journal" (add (index $categories "journal") 1)) -}}
+            {{- $cat = "journal" -}}
+        {{- else if findRE "\\[annals\\]" $line -}}
+            {{- $categories = merge $categories (dict "annals" (add (index $categories "annals") 1)) -}}
+            {{- $cat = "annals" -}}
+        {{- else if findRE "\\[chapter\\]" $line -}}
+            {{- $categories = merge $categories (dict "chapter" (add (index $categories "chapter") 1)) -}}
+            {{- $cat = "chapter" -}}
+        {{- else if findRE "\\[book\\]" $line -}}
+            {{- $categories = merge $categories (dict "book" (add (index $categories "book") 1)) -}}
+            {{- $cat = "book" -}}
+        {{- else if findRE "\\[reports\\]" $line -}}
+            {{- $categories = merge $categories (dict "reports" (add (index $categories "reports") 1)) -}}
+            {{- $cat = "reports" -}}
+        {{- end -}}
+        {{- if $currentYear -}}
+            {{- $pubs := index $years $currentYear -}}
+            {{- $pubs = $pubs | append $line -}}
+            {{- $years = merge $years (dict $currentYear $pubs) -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+
+{{- $yearKeys := slice -}}
+{{- range $k, $v := $years -}}
+    {{- $yearKeys = $yearKeys | append $k -}}
+{{- end -}}
+{{- $sortedYears := sort $yearKeys -}}
+
+{{- $output := printf "## Totais por categoria:\n" -}}
+{{- $output = printf "%s- Científicas: %d\n" $output (index $categories "scientific") -}}
+{{- $output = printf "%s- Artigos em periódicos: %d\n" $output (index $categories "journal") -}}
+{{- $output = printf "%s- Artigos em anais: %d\n" $output (index $categories "annals") -}}
+{{- $output = printf "%s- Capítulos de livros: %d\n" $output (index $categories "chapter") -}}
+{{- $output = printf "%s- Livros: %d\n" $output (index $categories "book") -}}
+{{- $output = printf "%s- Relatórios técnicos: %d\n" $output (index $categories "reports") -}}
+
+{{- $output = printf "%s\n## Publicações por ano\n" $output -}}
+{{- if gt (len $sortedYears) 0 -}}
+    {{- range $sortedYears -}}
+        {{- $year := . -}}
+        {{- if ne $year "" -}}
+            {{- $output = printf "%s\n## %s\n" $output $year -}}
+            {{- range (index $years $year) -}}
+                {{- $output = printf "%s- %s\n" $output . -}}
+            {{- end -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+{{ $output | markdownify }}

@@ -6,13 +6,14 @@
     <description>Recent content on Smart Assistant</description>
     <generator>Hugo</generator>
     <language>en</language>
+    <lastBuildDate>Tue, 09 Dec 2025 14:28:08 -0300</lastBuildDate>
     <atom:link href="//localhost:1313/publications/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>//localhost:1313/publications/publications/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/publications/publications/</guid>
-      <description></description>
+      <title>Publications</title>
+      <link>//localhost:1313/publications/</link>
+      <pubDate>Tue, 09 Dec 2025 14:28:08 -0300</pubDate>
+      <guid>//localhost:1313/publications/</guid>
+      <description>**Totais por categoria:**&#xA;- scientific publications: 2&#xA;- journal articles: 2&#xA;- conference papers: 1&#xA;- book chapters: 1&#xA;- books: 1&#xA;- technical reports: 0</description>
     </item>
   </channel>
 </rss>
