@@ -8,10 +8,35 @@
 -}}
 {{- $years := dict -}}
 {{- $currentYear := "" -}}
+{{- $pubLine := "" -}}
 {{- $lines := split .Inner "\n" -}}
 {{- range $lines -}}
-    {{- $line := trim . " \n\r\t" -}}
-    {{- if or (findRE "^\\*\\*[0-9]{4}\\*\\*$" $line) (findRE "^<strong>[0-9]{4}</strong>$" $line) -}}
+    {{- $line := trim . " \r\n\t" -}}
+    {{- $isYear := or (findRE "^\\*\\*[0-9]{4}\\*\\*$" $line) (findRE "^<strong>[0-9]{4}</strong>$" $line) -}}
+    {{- $isPub := findRE "^\\s*-\\s*\\[.*\\]" $line -}}
+    {{- if $isYear -}}
+        {{- if ne $pubLine "" -}}
+            {{- $cat := "" -}}
+            {{- if findRE "\\[scientific\\]" $pubLine -}}
+                {{- $categories = merge $categories (dict "scientific" (add (index $categories "scientific") 1)) -}}
+            {{- else if findRE "\\[journal\\]" $pubLine -}}
+                {{- $categories = merge $categories (dict "journal" (add (index $categories "journal") 1)) -}}
+            {{- else if findRE "\\[annals\\]" $pubLine -}}
+                {{- $categories = merge $categories (dict "annals" (add (index $categories "annals") 1)) -}}
+            {{- else if findRE "\\[chapter\\]" $pubLine -}}
+                {{- $categories = merge $categories (dict "chapter" (add (index $categories "chapter") 1)) -}}
+            {{- else if findRE "\\[book\\]" $pubLine -}}
+                {{- $categories = merge $categories (dict "book" (add (index $categories "book") 1)) -}}
+            {{- else if findRE "\\[reports\\]" $pubLine -}}
+                {{- $categories = merge $categories (dict "reports" (add (index $categories "reports") 1)) -}}
+            {{- end -}}
+            {{- if $currentYear -}}
+                {{- $pubs := index $years $currentYear -}}
+                {{- $pubs = $pubs | append $pubLine -}}
+                {{- $years = merge $years (dict $currentYear $pubs) -}}
+            {{- end -}}
+            {{- $pubLine = "" -}}
+        {{- end -}}
         {{- $currentYear = replaceRE "[^0-9]*([0-9]{4}).*" "$1" $line | trim " " -}}
         {{- $exists := false -}}
         {{- range $k, $v := $years -}}
@@ -22,33 +47,57 @@
         {{- if not $exists -}}
             {{- $years = merge $years (dict $currentYear (slice)) -}}
         {{- end -}}
-    {{- else if findRE "^\\s*-\\s*\\[.*\\]" $line -}}
-        {{- $cat := "" -}}
-        {{- if findRE "\\[scientific\\]" $line -}}
-            {{- $categories = merge $categories (dict "scientific" (add (index $categories "scientific") 1)) -}}
-            {{- $cat = "scientific" -}}
-        {{- else if findRE "\\[journal\\]" $line -}}
-            {{- $categories = merge $categories (dict "journal" (add (index $categories "journal") 1)) -}}
-            {{- $cat = "journal" -}}
-        {{- else if findRE "\\[annals\\]" $line -}}
-            {{- $categories = merge $categories (dict "annals" (add (index $categories "annals") 1)) -}}
-            {{- $cat = "annals" -}}
-        {{- else if findRE "\\[chapter\\]" $line -}}
-            {{- $categories = merge $categories (dict "chapter" (add (index $categories "chapter") 1)) -}}
-            {{- $cat = "chapter" -}}
-        {{- else if findRE "\\[book\\]" $line -}}
-            {{- $categories = merge $categories (dict "book" (add (index $categories "book") 1)) -}}
-            {{- $cat = "book" -}}
-        {{- else if findRE "\\[reports\\]" $line -}}
-            {{- $categories = merge $categories (dict "reports" (add (index $categories "reports") 1)) -}}
-            {{- $cat = "reports" -}}
+    {{- else if $isPub -}}
+        {{- if ne $pubLine "" -}}
+            {{- $cat := "" -}}
+            {{- if findRE "\\[scientific\\]" $pubLine -}}
+                {{- $categories = merge $categories (dict "scientific" (add (index $categories "scientific") 1)) -}}
+            {{- else if findRE "\\[journal\\]" $pubLine -}}
+                {{- $categories = merge $categories (dict "journal" (add (index $categories "journal") 1)) -}}
+            {{- else if findRE "\\[annals\\]" $pubLine -}}
+                {{- $categories = merge $categories (dict "annals" (add (index $categories "annals") 1)) -}}
+            {{- else if findRE "\\[chapter\\]" $pubLine -}}
+                {{- $categories = merge $categories (dict "chapter" (add (index $categories "chapter") 1)) -}}
+            {{- else if findRE "\\[book\\]" $pubLine -}}
+                {{- $categories = merge $categories (dict "book" (add (index $categories "book") 1)) -}}
+            {{- else if findRE "\\[reports\\]" $pubLine -}}
+                {{- $categories = merge $categories (dict "reports" (add (index $categories "reports") 1)) -}}
+            {{- end -}}
+            {{- if $currentYear -}}
+                {{- $pubs := index $years $currentYear -}}
+                {{- $pubs = $pubs | append $pubLine -}}
+                {{- $years = merge $years (dict $currentYear $pubs) -}}
+            {{- end -}}
+            {{- $pubLine = "" -}}
         {{- end -}}
-        {{- if $currentYear -}}
-            {{- $pubs := index $years $currentYear -}}
-            {{- $pubs = $pubs | append $line -}}
-            {{- $years = merge $years (dict $currentYear $pubs) -}}
+        {{- $pubLine = (replaceRE "^\\s*-\\s*" "" $line) -}}
+    {{- else -}}
+        {{- if ne $pubLine "" -}}
+            {{- $pubLine = printf "%s %s" $pubLine $line -}}
         {{- end -}}
     {{- end -}}
+{{- end -}}
+{{- if ne $pubLine "" -}}
+    {{- $cat := "" -}}
+    {{- if findRE "\\[scientific\\]" $pubLine -}}
+        {{- $categories = merge $categories (dict "scientific" (add (index $categories "scientific") 1)) -}}
+    {{- else if findRE "\\[journal\\]" $pubLine -}}
+        {{- $categories = merge $categories (dict "journal" (add (index $categories "journal") 1)) -}}
+    {{- else if findRE "\\[annals\\]" $pubLine -}}
+        {{- $categories = merge $categories (dict "annals" (add (index $categories "annals") 1)) -}}
+    {{- else if findRE "\\[chapter\\]" $pubLine -}}
+        {{- $categories = merge $categories (dict "chapter" (add (index $categories "chapter") 1)) -}}
+    {{- else if findRE "\\[book\\]" $pubLine -}}
+        {{- $categories = merge $categories (dict "book" (add (index $categories "book") 1)) -}}
+    {{- else if findRE "\\[reports\\]" $pubLine -}}
+        {{- $categories = merge $categories (dict "reports" (add (index $categories "reports") 1)) -}}
+    {{- end -}}
+    {{- if $currentYear -}}
+        {{- $pubs := index $years $currentYear -}}
+        {{- $pubs = $pubs | append $pubLine -}}
+        {{- $years = merge $years (dict $currentYear $pubs) -}}
+    {{- end -}}
+    {{- $pubLine = "" -}}
 {{- end -}}
 
 {{- $yearKeys := slice -}}
@@ -65,7 +114,7 @@
 {{- $output = printf "%s- Livros: %d\n" $output (index $categories "book") -}}
 {{- $output = printf "%s- Relatórios técnicos: %d\n" $output (index $categories "reports") -}}
 
-{{- $output = printf "%s\n## Publicações por ano\n" $output -}}
+{{- $output = printf "%s\n## Publicações\n" $output -}}
 {{- if gt (len $sortedYears) 0 -}}
     {{- range $sortedYears -}}
         {{- $year := . -}}

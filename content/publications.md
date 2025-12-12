@@ -8,9 +8,12 @@ summary = ""
 
 {{<countcategories>}}
 
+**2025**
+- [scientific] Título da publicação científica 1
+
 **2024**
 
--   [scientific] Título da publicação científica
+-   [scientific] Título da publicação científica 2
 -   [journal] Título do artigo em periódico
 -   [annals] Título do artigo em anais
 -   [chapter] Título do capítulo de livro
