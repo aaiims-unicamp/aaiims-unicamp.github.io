@@ -7,7 +7,7 @@ url = "/publications"
 summary = ""
 +++
 
-{{<countcategories>}}
+{{<publication-countcategories>}}
 
 **2025**
 - [scientific] Título da publicação científica 1
