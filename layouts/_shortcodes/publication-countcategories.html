@@ -6,7 +6,7 @@
     "book" 0
     "reports" 0
 -}}
-{{- $html := .Page.Content -}}
+{{- $html := .Inner | markdownify -}}
 {{- $pubMatches := findRE "<li>(.*?)</li>" $html -}}
 {{- range $pubMatches -}}
     {{- $pub := replaceRE "<li>(.*?)</li>" "$1" . -}}
@@ -34,3 +34,4 @@
 {{- $output = printf "%s- Relatórios técnicos: %d\n" $output (index $categories "reports") -}}
 
 {{ $output | markdownify }}
+{{ .Inner | markdownify}}

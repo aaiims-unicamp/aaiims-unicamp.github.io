@@ -25,3 +25,8 @@ summary = ""
 
 -   [scientific] Outra publicação científica
 -   [journal] Outro artigo em periódico
+
+**2022**
+-   [journal] Periódico mais antigo
+
+{{</publication-countcategories>}}
