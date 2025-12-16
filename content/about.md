@@ -7,9 +7,10 @@ url = "/about"
 summary = ""
 +++
 
-> _"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."_
+> **E**nhanced **A**gents for **G**enerative **L**anguage **E**xcellence
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elit augue, auctor at felis sit amet, egestas condimentum odio. Nam dictum egestas turpis, eget convallis orci. Proin a arcu vel nulla accumsan dapibus non gravida orci. Praesent fermentum quam sit amet feugiat elementum. In mattis tortor magna, vitae ultrices tellus pretium eget. Duis volutpat dapibus risus, nec mattis ex laoreet ac. Duis pharetra vulputate convallis. Suspendisse condimentum feugiat vestibulum. Maecenas cursus magna urna, eget semper dui vestibulum in. Vestibulum in mattis sem, ac tincidunt odio. Suspendisse vel mi sit amet mi convallis porta. Pellentesque sed cursus lorem. Ut vitae est placerat, condimentum dolor et, interdum magna.
+EAGLE is a framework for developing multiagent systems based upon cognitive mechanisms. It was inspired by the conceptual framework presented in Cognitive Architectures for Language Agents (CoALA). EAGLE is currently being developed in Python 3 with LangGraph. The project is maintained by the Universidade Estadual de Campinas (UNICAMP).
+
 
 # Team
 {{<about-team>}}
