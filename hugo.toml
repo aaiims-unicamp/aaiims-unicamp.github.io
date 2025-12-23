@@ -3,6 +3,7 @@ title = "Agentic AI for Industrial Monitoring Systems"
 theme = ["ananke"]
 resourceDir = "./public"
 
+
 defaultContentLanguage = "en"
 sectionPagesMenu = "main"
 enableRobotsTXT = true
