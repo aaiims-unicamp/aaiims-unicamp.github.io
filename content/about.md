@@ -1,7 +1,7 @@
 +++
 draft = false
 url = "/about"
-featured_image = "../img/website/cover.jpg"
+featured_image = "../img/website/cover.png"
 summary = ""
 +++
 
