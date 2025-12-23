@@ -15,8 +15,7 @@ id = ''
 pagerSize = 20
 
 [params]
-site_logo = ""
-site_footer = ""
+site_logo = "./img/website/logo.png"
 favicon = "./img/website/favicon.ico"
 github = "https://github.com/smartassistant-unicamp"
 custom_css = ["./static/css/custom.css"]
