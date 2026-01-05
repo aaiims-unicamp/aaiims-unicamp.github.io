@@ -1,4 +1,4 @@
-baseURL = "smartassistant-unicamp.github.io/"
+baseURL = "aaiims-unicamp.github.io/"
 title = "Agentic AI for Industrial Monitoring Systems"
 theme = ["ananke"]
 resourceDir = "./public"
