@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "/Users/augustomachado/Dev/smartassistant-unicamp.github.io",
+	"sourceRoot": "/Users/augustomachado/Dev/aaiims-unicamp.github.io",
 	"sources": [
 		"ananke/css/main.css"
 	],
