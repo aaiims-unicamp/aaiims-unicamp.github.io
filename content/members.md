@@ -57,6 +57,7 @@ summary = ""
 {{<images-row columns="3">}}
     {{<image-column img="/img/members/mateus-edival.PNG" title="Mateus Edival Rodrigues da Silveira" subtitle="">}}
     {{<image-column img="/img/members/alejandro-arroyo.png" title="Alejandro Núñez Arroyo" subtitle="">}}
+     {{<image-column img="/img/members/unknown.png" title="Lucas Treviso Bandeira" subtitle="">}}
 {{</images-row>}}
 
 
@@ -74,18 +75,23 @@ summary = ""
 
 
 # Software Developers
-{{<images-row>}}
-    {{<image-column img="/img/members/luciana-oliveira.png" title="Luciana Oliveira" subtitle="">}}
+{{<images-row>}}    
     {{<image-column img="/img/members/augusto-machado.png" title="Augusto Machado" subtitle="">}}
+    {{<image-column img="/img/members/unknown.png" title="Fernando Stopasola Vieira" subtitle="">}}
 {{</images-row>}}
 
 
 
 
 # Former Participants
-{{<images-row columns="4">}}
+{{<images-row columns="4">}}   
     {{<image-column img="/img/members/unknown.png" title="Felipe Barroso" subtitle="">}}
     {{<image-column img="/img/members/unknown.png" title="Ana Luiza Regia Angelloti Carmo" subtitle="">}}
     {{<image-column img="/img/members/unknown.png" title="Lucas de Almeida" subtitle="">}}
     {{<image-column img="/img/members/gabriel-mascarenhas.png" title="Gabriel Carvalhais Mascarenhas" subtitle="">}}
 {{</images-row>}}
+{{<images-row columns="4">}}
+    {{<image-column img="/img/members/luciana-oliveira.png" title="Luciana Oliveira" subtitle="">}}   
+{{</images-row>}}
+
+
