@@ -57,10 +57,8 @@ summary = ""
 {{<images-row columns="3">}}
     {{<image-column img="/img/members/mateus-edival.PNG" title="Mateus Edival Rodrigues da Silveira" subtitle="">}}
     {{<image-column img="/img/members/alejandro-arroyo.png" title="Alejandro Núñez Arroyo" subtitle="">}}
-     {{<image-column img="/img/members/unknown.png" title="Lucas Treviso Bandeira" subtitle="">}}
+     {{<image-column img="/img/members/lucas-bandeira.png" title="Lucas Treviso Bandeira" subtitle="">}}
 {{</images-row>}}
-
-
 
 
 # Undergraduate Students
@@ -77,7 +75,7 @@ summary = ""
 # Software Developers
 {{<images-row>}}    
     {{<image-column img="/img/members/augusto-machado.png" title="Augusto Machado" subtitle="">}}
-    {{<image-column img="/img/members/unknown.png" title="Fernando Stopasola Vieira" subtitle="">}}
+    {{<image-column img="/img/members/fernando-stopasola.png" title="Fernando Stopasola Vieira" subtitle="">}}
 {{</images-row>}}
 
 
