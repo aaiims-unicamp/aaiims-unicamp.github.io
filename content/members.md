@@ -69,7 +69,7 @@ summary = ""
     {{<image-column img="/img/members/leonardo-spahn.jpg" title="Leonardo Oberle Spahn" subtitle="">}}
     {{<image-column img="/img/members/julio-amaral.png" title="Julio Vinicius Amaral" subtitle="">}}
     {{<image-column img="/img/members/guilherme-souza.png" title="Guilherme Souza" subtitle="">}}
-    {{<image-column img="/img/members/unknown.png" title="Daniel Alves" subtitle="">}}
+    {{<image-column img="/img/members/daniel-alvez.png" title="Daniel Alves" subtitle="">}}
 {{</images-row>}}
 
 
