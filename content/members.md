@@ -64,9 +64,12 @@ summary = ""
 # Undergraduate Students
 {{<images-row columns="4">}}
     {{<image-column img="/img/members/gabriel-barros.png" title="Gabriel Lopes de Barros" subtitle="">}}
-    {{<image-column img="/img/members/guilherme-monteiro.png" title="Guilherme Monteiro" subtitle="">}}
-    {{<image-column img="/img/members/joao-henrique-costa.jpg" title="João Henrique Mendes da Costa" subtitle="">}}
+    {{<image-column img="/img/members/guilherme-monteiro.png" title="Guilherme Monteiro" subtitle="">}}    
     {{<image-column img="/img/members/marcos-malamud.jpg" title="Marcos Malamud" subtitle="">}}
+    {{<image-column img="/img/members/leonardo-spahn.jpg" title="Leonardo Oberle Spahn" subtitle="">}}
+    {{<image-column img="/img/members/julio-amaral.png" title="Julio Vinicius Amaral" subtitle="">}}
+    {{<image-column img="/img/members/guilherme-souza.png" title="Guilherme Souza" subtitle="">}}
+    {{<image-column img="/img/members/unknown.png" title="Daniel Alves" subtitle="">}}
 {{</images-row>}}
 
 
@@ -87,6 +90,7 @@ summary = ""
     {{<image-column img="/img/members/unknown.png" title="Ana Luiza Regia Angelloti Carmo" subtitle="">}}
     {{<image-column img="/img/members/unknown.png" title="Lucas de Almeida" subtitle="">}}
     {{<image-column img="/img/members/gabriel-mascarenhas.png" title="Gabriel Carvalhais Mascarenhas" subtitle="">}}
+    {{<image-column img="/img/members/joao-henrique-costa.jpg" title="João Henrique Mendes da Costa" subtitle="">}}
 {{</images-row>}}
 {{<images-row columns="4">}}
     {{<image-column img="/img/members/luciana-oliveira.png" title="Luciana Oliveira" subtitle="">}}   
