@@ -46,11 +46,14 @@ summary = ""
 {{</image-text-row>}}
 
 
+# Ph.D. Students
+{{<images-row columns="3">}}
+    {{<image-column img="/img/members/ronaldinho-oliveira.png" title="Ronaldinho Vega Centeno Olivera" subtitle="">}}  
+{{</images-row>}}
 
 
 # M.Sc. Students
 {{<images-row columns="3">}}
-    {{<image-column img="/img/members/ronaldinho-oliveira.png" title="Ronaldinho Vega Centeno Olivera" subtitle="">}}
     {{<image-column img="/img/members/renan-morais.jpeg" title="Renan dos Santos Morais" subtitle="">}}
     {{<image-column img="/img/members/rodrigo-flexa.png" title="Rodrigo Gonçalves Flexa" subtitle="">}}
 {{</images-row>}}
@@ -67,7 +70,7 @@ summary = ""
     {{<image-column img="/img/members/guilherme-monteiro.png" title="Guilherme Monteiro" subtitle="">}}    
     {{<image-column img="/img/members/marcos-malamud.jpg" title="Marcos Malamud" subtitle="">}}
     {{<image-column img="/img/members/leonardo-spahn.jpg" title="Leonardo Oberle Spahn" subtitle="">}}
-    {{<image-column img="/img/members/julio-amaral.png" title="Julio Vinicius Amaral" subtitle="">}}
+    {{<image-column img="/img/members/julio-amaral.png" title="Julio Vinicius Amaral Oliveira" subtitle="">}}
     {{<image-column img="/img/members/guilherme-souza.png" title="Guilherme Souza" subtitle="">}}
     {{<image-column img="/img/members/daniel-alvez.png" title="Daniel Alves" subtitle="">}}
 {{</images-row>}}
