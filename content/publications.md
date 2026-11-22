@@ -22,7 +22,6 @@ summary = ""
 
 - SILVEIRA, M. E. R.; OLIVERA. R. V. C.; ARROYO, A. N.; SOUZA, A. M. S.; DOS REIS. J. C. (2026) [Dissecting Non-Determinism in Large Language Models.](https://iclr-blogposts.github.io/2026/blog/2026/dissecting-non-determinism/) Blogpost at the Fourteenth International Conference on Learning Representations (ICLR 2026). Rio de Janeiro, Brazil.
 
-
 - OLIVERA. R. V. C.; SILVEIRA, M. E. R.; ARROYO, A. N.; SOUZA, A. M. S.; DOS REIS. J. C. (2026) [Divide, Conquer, and Standardize - A Recursive Architecture for Multi-Agent Systems (MAS).](https://iclr-blogposts.github.io/2026/blog/2026/fractal-mas/) Blogpost at the Fourteenth International Conference on Learning Representations (ICLR 2026). Rio de Janeiro, Brazil.
 
 
