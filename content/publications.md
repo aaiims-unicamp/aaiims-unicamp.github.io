@@ -6,9 +6,19 @@ summary = ""
 
 # 2026
 
-- SILVA, E.; BARROS, G. L.; ARROYO, A. N.; RODRIGUES, M. E.; FURTADO, P. H. T.; DOS REIS, J. C. (2026) QUEST: A RAG-based Planning Memory to Augment Task Solving of LLM-based Cognitive Agents. In 14th International Workshop on Engineering Multi-Agent Systems (EMAS 2026) collocated with the 25th International Conference on Autonomous Agents and Multiagent Systems (AAMAS’26), Paphos, Cyprus (to be published)
+- BANDEIRA, L. T.; ROCHA, D. A.; SILVA, E.; DOS REIS, J. C. (2026) [Stagent: A Finite-State Machine Architecture for Traceable LLM Agents.](https://sol.sbc.org.br/index.php/wesaac/article/view/45240/45001) In XX Workshop-School on Agents, Environments, and Applications (WESAAC'26). SBC. Cuiabá, Brazil.
 
-- FLEXA, R. G.; MOHAMED, A. H.; SANTOS, F.; VILLAS, L. A.; DOS REIS, J. C. (2026) Bridging Reflective and Semantic Memory for Lifelong Learning in LLM-based Agents. In 14th International Workshop on Engineering Multi-Agent Systems (EMAS 2026) collocated with the 25th International Conference on Autonomous Agents and Multiagent Systems (AAMAS’26), Paphos, Cyprus (to be published)
+- RODRIGUES, M. E.; DE SOUZA, A. M.; DOS REIS, J. C. (2026) On the Limits of Triple-Only Retrieval for GraphRAG: Evidence from Zero-Shot Ontology-Guided Exploration. In Proceedings of the 18th International Joint Conference on Knowledge Discovery, Knowledge Engineering and Knowledge Management (IC3K). 18th International Conference on Knowledge Discovery and Information Retrieval (KDIR’26). Angers, France.
+
+- MORAIS, R.; SANTOS, F. A.; VILLAS, L. A.; DOS REIS, J. C. (2026) A Planner Cache for Short-Term Memory Management in LLM-Based Agents. In the Proceedings of the 2nd International Conference on Agentic and Generative Techniques in Intelligent Computational Systems (AGENTICS’26). Part of the 18th International Joint Conference on Computational Intelligence (IJCCI’25). Angers, France.
+
+- ARROYO, A. N.; DOS REIS, J. C. (2026) MCPForge: Automatic Generation of Certified Tool-Use Benchmarks for LLM Agents. In the Proceedings of the 2nd International Conference on Agentic and Generative Techniques in Intelligent Computational Systems (AGENTICS’26). Part of the 18th International Joint Conference on Computational Intelligence (IJCCI’25). Angers, France.
+
+- OLIVERA, R. V. C.; SOUZA, A. M.; DOS REIS, J. C. (2026) Enhancing Dense Retrieval Robustness via Grounded Multi-Query Expansion: Extensive Assessment of the RFG Framework. In Communications in Computer and Information Science Springer (to be published).
+
+- SILVA, E.; BARROS, G. L.; ARROYO, A. N.; RODRIGUES, M. E.; FURTADO, P. H. T.; DOS REIS, J. C. (2026) QUEST: A RAG-based Planning Memory to Augment Task Solving of LLM-based Cognitive Agents. In 14th International Workshop on Engineering Multi-Agent Systems (EMAS 2026) collocated with the 25th International Conference on Autonomous Agents and Multiagent Systems (AAMAS’26), Paphos, Cyprus.
+
+- FLEXA, R. G.; MOHAMED, A. H.; SANTOS, F.; VILLAS, L. A.; DOS REIS, J. C. (2026) Bridging Reflective and Semantic Memory for Lifelong Learning in LLM-based Agents. In 14th International Workshop on Engineering Multi-Agent Systems (EMAS 2026) collocated with the 25th International Conference on Autonomous Agents and Multiagent Systems (AAMAS’26), Paphos, Cyprus.
 
 - SILVEIRA, M. E. R.; OLIVERA. R. V. C.; ARROYO, A. N.; SOUZA, A. M. S.; DOS REIS. J. C. (2026) [Dissecting Non-Determinism in Large Language Models.](https://iclr-blogposts.github.io/2026/blog/2026/dissecting-non-determinism/) Blogpost at the Fourteenth International Conference on Learning Representations (ICLR 2026). Rio de Janeiro, Brazil.
 
